@@ -543,14 +543,26 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .4s .2s; }
+    @media (max-width: 75em) {
+      .popup__content {
+        display: flex;
+        flex-direction: column-reverse; } }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        width: 50%;
+        display: flex; } }
   .popup__right {
     width: 66.66666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: table-cell; } }
   .popup__img {
     display: block;
     width: 100%; }

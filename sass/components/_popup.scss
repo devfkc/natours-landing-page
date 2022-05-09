@@ -22,11 +22,21 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .4s .2s;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 
     &__left {
         width: 33.3333333%;
         display: table-cell;
+
+        @include respond(tab-land) {
+            width: 50%;
+            display: flex;
+        }
     }
     
     &__right {
@@ -34,6 +44,11 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem;
+
+        @include respond(tab-land) {
+            width: 100%;
+            display: table-cell;
+        }
     }
 
     &__img {
